@@ -1,0 +1,8 @@
+cd c:\intel
+git clone https://github.com/Kiri24/Kiri24.github.io.git
+cd .\Kiri24.github.io\
+git remote set-url origin https:Kiriok24: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@github.com/Kiriok24/Kiriok24.github.io.git
+
+git add .
+git commit -m "02 - ??????? ??????"
+git push
