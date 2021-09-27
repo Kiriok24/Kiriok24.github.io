@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Сайт web-студії "WEB-DECO"</title>
     <!-- ==================== JAVASCRIPT =============================================== -->
+<script src="js/clock1.js"></script>
 <script type="text/javascript">
 function send()
 {
@@ -38,9 +39,14 @@ function send()
         font-size: 4em;
         }
         </style>
+<script>
+window.onload = function(){
+    setInterval(clockPainting, 1000); }
+</script>        
+
+<!-- ======================= Каркас сайта ========================= -->
 </head>
 <body background="images/bn.jpg">
-<!-- ======================= Каркас сайта ========================= -->
 <table border="1" align="center" cellpadding="10">
     <tr>
     <td background="images/bg-3.jpg" colspan="2" height="150" align="right" hspace="5">
@@ -58,7 +64,10 @@ function send()
         </b></font></td>
     </tr>
     <tr>
-    <td width="30%" valign="top"><font size="5" color="navy"><h2>Наші роботи</h2></font>
+    <td width="30%" valign="top">
+<center><canvas id="csnvas" height="120" width="120"></canvas></center>
+<hr>
+        <font size="5" color="navy"><h2>Наші роботи</h2></font>
         <font size="5" >
         <ul>
         <li><a href="#">Сайт будіівельної компанії </a></li>
